@@ -212,6 +212,7 @@ a.more:hover {
 }
 ul.list-home {
 	list-style-type: none;
+	margin: 0;
 }
 ul.list-home li {
 	background-image: url(../images/round-bullet.jpg);
@@ -278,4 +279,30 @@ a.more2:hover {
 }
 .footer ul li a:hover {
 	color: #ff0303;
+}
+.second_shop {
+  margin-top:20px;
+}
+.homeshop ,.yepme ,.myntra ,.jabong ,.yebhi,.snapdeal,.flipkart,.ebay,.junglee,.disney,.lilliput,.tradus{
+  float: left;
+  width: 25%
+}
+.homeshop a ,.yepme a ,.myntra a ,.jabong a ,.yebhi a,.snapdeal a,.flipkart a,.ebay a,.junglee a
+,.disney a,.lilliput a,.tradus a{
+ float: left;
+}
+/** css for calculator page ***/
+.buttons {
+  text-align: center;
+}
+#plus,#minus,#multi,#divide {
+  width: 4%;
+  height: 4%;
+}
+#txt {
+  margin-left: 34%;
+  margin-top: 3%;
+}
+#insrt2 {
+  float: right;
 }

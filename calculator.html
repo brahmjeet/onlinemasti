@@ -48,63 +48,18 @@
 <div class="right-panel">
  <div class="right-panel-in">
   <div class="row">
-   <h2 class="title"><span>Most Recent online <span>Shopping Site</span></span></h2>
+   <h2 class="title"><span>Calculator</span></h2>
     <div class="row2">
      <ul class="list-home">
-      <div class= "firstshop">
-      <div class="homeshop">
-        <img src="images/homeshop18.png"/>
-        <a href="http://www.homeshop18.com"<strong>homeshop18</strong></a>
-      </div>
-      <div class="yepme">
-        <img src="images/yepme.png"/>
-        <a href="http://www.yepme.com"<strong>yepme</strong>
-      </div>
-      <div class="myntra">
-        <img src="images/myantra.png"/>
-        <a href="http://www.myntra.com/"<strong>Myntra</strong>
-      </div>
-      <div class="jabong">
-        <img src="images/jabong.png"/>
-        <a href="http://www.jabong.com"<strong>jabong</strong>
-      </div>
+      <input id ="insrt1" name ="insert1" type="text" value=""> 
+      <input id ="insrt2" name ="insert2" type="text" value="">
+      <div class="buttons">
+      <input type="submit" name="plus" id="plus"  value=" + " onclick="return plussCal();"/>
+      <input type="submit" name="minus" id="minus"  value=" - " onclick="return minusCal();"/>
+      <input type="submit" name="multi" id="multi"  value=" * " onclick="return multiCal();"/>
+      <input type="submit" name="divide" id="divide"  value=" / " onclick="return divideCal();"/>
     </div>
-      <div class="second_shop">
-      <div class="yebhi">
-        <img src="images/Yebhi.jpg"/>
-        <a href="http://www.yebhi.com"<strong>yebhi</strong>
-      </div>
-      <div class="snapdeal">
-       <img src="images/snapdeal.jpg"/>
-       <a href="http://www.snapdeal.com"<strong>snapdeal</strong>
-       </div>
-       <div class="flipkart">
-       <img src="images/flipkart.jpeg"/>
-       <a href="http://www.flipkart.com"<strong>flipkart</strong>
-       </div>
-       <div class="ebay">
-       <img src="images/ebay.jpg"/>
-       <a href="http://www.ebay.in"<strong>ebay</strong>
-       </div>
-     </div>
-     <div class="thirdshop">
-       <div class="junglee">
-       <img src="images/junglee.jpeg"/>
-       <a href="http://www.junglee.com"<strong>junglee</strong>
-       </div>
-       <div class="tradus">
-       <img src="images/tradus.jpg"/>
-       <a href="http://www.tradus.com"<strong>tradus</strong>
-       </div>
-       <div class="lilliput">
-       <img src="images/lilliput.gif"/>
-       <a href="http://www.lilliputkids.com"<strong>lilliput</strong>
-       </div>
-       <div class="disney">
-       <img src="images/disney.jpeg"/>
-       <a href="http://www.shopatdisney.in/"<strong>Disney store</strong>
-       </div>
-       </div>
+      <input id ="txt" type="text" value="" readonly>    
     </ul>
    </div>
   </div>
@@ -128,3 +83,44 @@
 </div>
 </body>
 </html>
+<script type="text/javascript">
+
+      function plussCal() {
+      var val1 =document.getElementById("insrt1").value;
+      var val2 =document.getElementById("insrt2").value;
+      
+      var val3 = document.getElementById("txt").value;
+           val3 = parseInt(val1) + parseInt(val2);
+      document.getElementById("txt").value = val3;
+         }
+      
+      function minusCal() {
+      var val1 =document.getElementById("insrt1").value;
+      var val2 =document.getElementById("insrt2").value;
+      
+      var val3 = document.getElementById("txt").value;
+           val3 = parseInt(val1) - parseInt(val2);
+      document.getElementById("txt").value = val3;
+         }
+
+
+      function multiCal() {
+      var val1 =document.getElementById("insrt1").value;
+      var val2 =document.getElementById("insrt2").value;
+      
+      var val3 = document.getElementById("txt").value;
+           val3 = parseInt(val1) * parseInt(val2);
+      document.getElementById("txt").value = val3;
+         }
+
+
+      function divideCal() {
+      var val1 =document.getElementById("insrt1").value;
+      var val2 =document.getElementById("insrt2").value;
+      
+      var val3 = document.getElementById("txt").value;
+           val3 = parseInt(val1) / parseInt(val2);
+      document.getElementById("txt").value = val3;
+         }
+         
+      </script>
